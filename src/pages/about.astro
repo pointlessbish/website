@@ -1,0 +1,121 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout
+  title="About | pointlessbish"
+  description="About pointlessbish Lorem Ipsum"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            Hello! I'm pb. I have experience in ICT, with a focus on computer
+            systems, technical support, and programming. I've worked with
+            assembling, upgrading, and maintaining computer hardware and
+            software. I enjoy staying up-to-date with technological advancements
+            and continually improving my programming skills.
+          </p>
+          <p>
+            My career began with hands-on technical support roles, where I honed
+            my skills in system assembly and maintenance. Over the years, I've
+            expanded my expertise to include programming and project
+            development, allowing me to contribute to various technical and
+            software solutions.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <p>
+            - MBO (Level 4) – ICT Application Developer<br />
+            Gilde Opleidingen (2016 – 2017)
+          </p>
+          <p>
+            - VMBO – TL<br />
+            Citaverde College (2011 – 2016)
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="content">
+          <p>
+            I have developed a range of technical skills including but not
+            limited to:<br />
+            - Computer system assembly and maintenance<br />
+            - Technical troubleshooting and support<br />
+            - Programming and scripting, including HTML, CSS, and JavaScript<br
+            />
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style>
