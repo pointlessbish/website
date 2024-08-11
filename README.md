@@ -1,30 +1,30 @@
 # Astro Starter Kit: Portfolio
 
-```sh
-npm create astro@latest -- --template portfolio
-```
+This project is built with Astro, a modern static site builder.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
+You can open the project directly in the following online editors:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [Open in StackBlitz](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
+- [Open with CodeSandbox](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
+- [Open in GitHub Codespaces](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
 
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+> **Tip for experienced users:** If you're already familiar with Astro, you can delete this file and start customizing your project right away.
 
-## 🧞 Commands
+![Portfolio Example](/public/website-screenshot.png)
 
-All commands are run from the root of the project, from a terminal:
+## Commands
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Here are the main commands you'll need to manage your project. Run them from the root directory of your project in your terminal:
 
-## 👀 Want to learn more?
+| Command                   | Description                                      |
+|---------------------------|--------------------------------------------------|
+| `astro dev`               | Start the development server at `localhost:4321` |
+| `astro build`             | Build the production site in the `./dist/` folder |
+| `astro preview`           | Preview the production build locally             |
+| `astro add`               | Add new integrations or components to your project |
+| `astro check`             | Check your project for errors                    |
+| `astro --help`            | Get help with using the Astro CLI                |
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Learn More
+
+For more information, you can refer to the [Astro documentation](https://docs.astro.build) or join the community on [Discord](https://astro.build/chat).
