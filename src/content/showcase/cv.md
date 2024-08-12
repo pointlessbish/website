@@ -45,4 +45,4 @@ Hello! I'm Melanie Vegelien. I have experience in ICT, with a focus on computer 
 
 ## Download My Resume
 
-- **Multi-language:** [Download CV (English, German, Dutch)](https://filedrop.void14.com/cv)
+- **Multi-language:** [Download CV (English, German, Dutch)](https://filedrop.void14.com/dir/cv/cv.zip)
