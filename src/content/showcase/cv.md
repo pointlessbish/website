@@ -4,7 +4,7 @@ publishDate: 2024-08-11 00:00:00
 img: /laptop.svg
 img_alt: laptop icon
 description: |
-  here's my cv.
+  Here's my CV.
 tags:
   - CV
   - Work Experiences
@@ -45,6 +45,4 @@ Hello! I'm Melanie Vegelien. I have experience in ICT, with a focus on computer 
 
 ## Download My Resume
 
-- **English:** [Download English CV](https://filedrop.void14.com/dir/cv/MVegelien_CV-English.txt)
-- **German (Deutsch):** [Download German CV](https://filedrop.void14.com/dir/cv/MVegelien_CV-Deutsch.txt)
-- **Dutch (Nederlands):** [Download Dutch CV](https://filedrop.void14.com/dir/cv/MVegelien_CV-Nederlands.txt)
+- **Multi-language:** [Download CV (English, German, Dutch)](https://filedrop.void14.com/cv)
