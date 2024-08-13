@@ -15,21 +15,31 @@ const iconLinks: {
   label: string;
   href: string;
   icon: keyof typeof iconPaths;
+  target?: string; // Optional target attribute
 }[] = [
   {
     label: "GitHub",
     href: "https://github.com/pointlessbish",
     icon: "github-logo",
+    target: "_blank",
   },
   {
     label: "Twitch",
     href: "https://twitch.tv/pointlessbish",
     icon: "twitch-logo",
+    target: "_blank",
   },
   {
     label: "YouTube",
     href: "https://www.youtube.com/pointlessbish/",
     icon: "youtube-logo",
+    target: "_blank",
+  },
+  {
+    label: "Ko-Fi",
+    href: "https://ko-fi.com/pointlessbish",
+    icon: "kofi-logo",
+    target: "_blank",
   },
 ];
 ---
