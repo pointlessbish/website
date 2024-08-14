@@ -4,4 +4,4 @@
 
 ## Learn More
 
-For more information, you can refer to the [Astro documentation](https://docs.astro.build) or join the community on [Discord](https://astro.build/chat).
+For more information, you can refer to the [Astro documentation](https://docs.astro.build) or join the Astro community on [Discord](https://astro.build/chat).
