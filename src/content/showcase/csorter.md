@@ -4,7 +4,7 @@ publishDate: 2024-08-20 00:00:00
 img: /CSorter.png
 img_alt: laptop icon
 description: |
-  Here's my CV.
+  Community Sorter.
 tags:
   - Minecraft
   - CSorter
