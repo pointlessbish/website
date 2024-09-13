@@ -10,8 +10,6 @@ tags:
   - CSorter
   - AroundTheWorldMC
   - ATWMC
-  - CV
-  - Work Experiences
 ---
 
 
