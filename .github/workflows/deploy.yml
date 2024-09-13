@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write  # Allow writing to contents (since deploying to the same branch)
   pages: write
   id-token: write
 
@@ -14,7 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      - name: Checkout your repository
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -24,18 +24,27 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-      
-      - name: Install, build, and upload your site
-        uses: withastro/action@v2
-        with:
-          path: . # The root location of your Astro project inside the repository.
+
+      - name: Build the site
+        run: npm run build
+
+      - name: Upload site content
+        run: mv ./dist/* ./  # Assuming your build outputs to `dist/` folder
+
+      # Add a step to disable Jekyll
+      - name: Disable Jekyll
+        run: touch .nojekyll  # Create an empty `.nojekyll` file
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
+    permissions:
+      contents: write  # Permission to deploy to the same branch
     steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          branch: main  # Deploying to `main` branch
